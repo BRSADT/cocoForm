@@ -20,10 +20,9 @@ public class CocoFormpruebas {
     Query sentencia= new Query();
 
     
-    String[] datos={"ladak","f","fa"};
-   String[] tablas={"persona","asldk","fasda"};
-   
-   String[][] where={{"ladak", "=", "1"}, {"f","<","2"}, {"fa",">","2"}};
+    String[] datos={"nombre","edad","tipousuario"};
+   String[] tablas={"persona","usuarios"};
+     String[][] where={{"nombre", "==", "brenda","&&"}, {"edad","<","18"," "}};
    
    String[][] whereo={{""}};
  sentencia.selectJPQL(datos,tablas,where);

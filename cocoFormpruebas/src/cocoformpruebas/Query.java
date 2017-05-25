@@ -55,22 +55,22 @@ public class Query {
     else{
     
      query+= " where ";
-      query+=where[0][0]+" "+where[0][1]+" "+where[0][2];
+      query+=where[0][0]+" "+where[0][1]+" "+where[0][2]+" "+where[0][3];
     
     
     }
     
     
+    int c=0;
     
-    
-    for (String tablas:tabla){
-          if(y==0){
+    for (String elem[]:where){
+          if(c==0){
           
           }
           else{
-          query+=(","+tablas);
+          query+=(" "+elem[0]+" "+elem[1]+" "+elem[2]+" "+elem[3]);
           }
-          y++;
+          c++;
           
       }
     
@@ -79,10 +79,7 @@ public class Query {
     
         System.out.println(query);  
       
-      
-      
-      
-          System.out.println(query);
+
       
       
         
